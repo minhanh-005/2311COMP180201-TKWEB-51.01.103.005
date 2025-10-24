@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kế hoạch học tập</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .menu{
+            background-color: rgb(145, 93, 159);
+            width: 1535px;
+            height: 40px;
+            display:inline-block;
+        }
+        .menu li{
+            list-style-type:none;
+            float: left;
+            padding: 0 0px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: black;
+            padding: 0 10px;
+            line-height: 40px;
+            display: block;
+        }
+        .menu li a:hover{
+            background-color: rgb(136, 85, 161);
+            border-bottom:2px rgb(205, 91, 91) solid;
+
+        }
+        body {
+            background-color: rgb(212, 157, 217);
+        }
+        h1 {
+            text-align: center;
+            color: #23272b;
+        }
+        ul {
+            margin-top: 1px;
+            padding-left: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #647375;
+            margin-top: 40px;
+        }
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        section h2 {
+            color: #34495e;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .plan-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        .plan-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .plan-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+            font-size: 20px;
+        }
+
+        .plan-card p {
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .note {
+            font-style: italic;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <img src="./Logo.png">
+        </header>
+    </div>
+    <div  class="menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="khht.html">Kế hoạch học tập</a></li>
+            <li><a href="st.html">Sở thích</a></li>
+            <li><a href="lh.html">Liên hệ</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <section>
+            <h2>🎯 Mục Tiêu Học Tập</h2>
+            <div class="plan-list">
+                <div class="plan-card">
+                    <h3>📘 Lập trình Web</h3>
+                    <p>Hoàn thành học phần trước ngày <strong>30/11/2025</strong>.</p>
+                    <p>Học thêm được các kỹ năng lập trình, thiết kế web hiệu quả.</p>
+                </div>
+                <div class="plan-card">
+                    <h3>🗣️ Đạt điểm cao các môn</h3>
+                    <p>Tốt nghiệp đúng thời hạn và không nợ môn.</p>
+                    <p>Hoàn thành đủ tất cả các tín chỉ và đạt chuẩn Tiếng Anh đầu ra.</p>
+                </div>
+                <div class="plan-card">
+                    <h3>📚 Đọc sách kỹ năng</h3>
+                    <p>Hoàn thành 5 cuốn sách về phát triển bản thân trong năm nay.</p>
+                    <p>Thời gian: Cuối tuần, kết hợp viết nhật ký học tập.</p>
+                </div>
+            </div>
+            <p class="note">✨ Luôn duy trì động lực, nghỉ ngơi hợp lý và học tập đều đặn để đạt kết quả tốt nhất.</p>
+        </section>
+    </div>
+    <footer>
+        © 2025 - Trang cá nhân của tôi | Thiết kế bởi Minh Anh
+    </footer>
+</body>
+</html>

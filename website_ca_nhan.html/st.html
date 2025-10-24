@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <style>
+        .menu{
+            background-color: rgb(145, 93, 159);
+            width: 1535px;
+            height: 40px;
+            display:inline-block;
+        }
+        .menu li{
+            list-style-type:none;
+            float: left;
+            padding: 0 0px;
+        }
+        .menu li a{
+            text-decoration: none;
+            color: black;
+            padding: 0 10px;
+            line-height: 40px;
+            display: block;
+        }
+        .menu li a:hover{
+            background-color: rgb(136, 85, 161);
+            border-bottom:2px rgb(205, 91, 91) solid;
+
+        }
+        body {
+            background-color: rgb(212, 157, 217);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        h2 {
+            color: #34495e;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .hobby-card {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .hobby-card h3 {
+            margin-top: 0;
+            color: #2c3e50;
+        }
+
+        .hobby-card p {
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #647375;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <header>
+            <img src="./Logo.png">
+        </header>
+    </div>
+    <div  class="menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li><a href="khht.html">Kế hoạch học tập</a></li>
+            <li><a href="st.html">Sở thích</a></li>
+            <li><a href="lh.html">Liên hệ</a></li>
+            
+        </ul>
+    </div>
+    <div class="container">
+      <h2>🌈 Những điều tôi yêu thích</h2>
+      <div class="hobby-grid">
+        <div class="hobby-card">
+          <h3>📚 Đọc sách</h3>
+          <p>Yêu thích tiểu thuyết, sách kỹ năng sống và tâm lý học. Mỗi tháng cố gắng đọc ít nhất 2 cuốn để mở rộng tư duy.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎧 Nghe nhạc</h3>
+          <p>Thích các thể loại như lo-fi, indie, nhạc cổ điển. Âm nhạc giúp thư giãn và tăng cảm hứng khi học tập.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎮 Chơi game</h3>
+          <p>Đam mê game chiến thuật và giải đố. Game giúp rèn luyện tư duy logic và phản xạ nhanh.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>✈️ Du lịch</h3>
+          <p>Thích khám phá những vùng đất mới, trải nghiệm văn hóa và ẩm thực địa phương. Mỗi chuyến đi là một bài học sống động.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🧘 Thiền & Yoga</h3>
+          <p>Thực hành thiền mỗi sáng để tăng sự tập trung và cân bằng cảm xúc. Yoga giúp cải thiện sức khỏe và tinh thần.</p>
+        </div>
+        <div class="hobby-card">
+          <h3>🎨 Vẽ & Thiết kế</h3>
+          <p>Thích vẽ tranh minh họa và thiết kế đồ họa. Đây là cách thể hiện cảm xúc và sáng tạo cá nhân.</p>
+        </div>
+      </div>
+    </div>
+     <footer>
+      © 2025 - Trang cá nhân của tôi | Thiết kế bởi Minh Anh
+    </footer>
+</body>
+</html>

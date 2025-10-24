@@ -1,0 +1,180 @@
+#shark{
+    left: 200px; top: 600px;
+    position: absolute;
+    animation-name: Shark;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes Shark{
+    0% {left: 200px; top: 600px;transform: scaleX(1);}
+    20% { left: 500px; top: 600px;transform: scaleX(1);}
+    40% { left:800px;  top: 500px;transform: scaleX(1);}
+    50% {left: 1000px; top: 400px;transform: scaleX(1);}
+    60% {left: 1000px; top: 400px;transform: scaleX(-1);}
+    80% {left: 800px; top: 200px;transform: scaleX(-1);}
+    100% { left: 200px; top: 600px; transform: scaleX(-1);}
+}
+#turtle{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: Turtle;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes Turtle{
+    0% {left: 200px; top: 400px;transform: scaleX(1);}
+    20% { left: 500px; top: 400px;transform: scaleX(1);}
+    40% { left: 700px;  top: 300px;transform: scaleX(1);}
+    50% {left: 1200px; top: 50px;transform: scaleX(1);}
+    60% {left: 1200px; top: 100px;transform: scaleX(-1);}
+    80% {left: 500px; top: 200px;transform: scaleX(-1);}
+    100% { left: 200px; top: 400px; transform: scaleX(-1);}
+}
+#goldFishSchool{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: goldFishSchool;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes goldFishSchool{
+    0% {left: 200px; top: 200px;transform: scaleX(1);}
+    20% { left: 600px; top: 400px;transform: scaleX(1);}
+    40% { left: 900px;  top: 300px;transform: scaleX(1);}
+    50% {left: 1500px; top: 500px;transform: scaleX(1);}
+    60% {left: 1500px; top: 400px;transform: scaleX(-1);}
+    80% {left: 900px; top: 200px;transform: scaleX(-1);}
+    100% { left: 200px; top: 200px; transform: scaleX(-1);}
+}
+#faintschool{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: faintschool;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes faintschool{
+    0% {left: 400px; top: 800px;}
+    20% { left: 500px; top: 700px;}
+    40% { left: 500px;  top: 600px;}
+    50% {left: 600px; top: 500px;}
+    60% {left: 600px; top: 400px;}
+    80% {left: 600px; top: 200px;}
+    100% { left: 500px; top: 100px;}
+}
+#diver1{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: diver1;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver1{
+    0% {left: 400px; top: 400px;transform: scaleX(1);}
+    20% { left: 700px; top: 700px;transform: scaleX(1);}
+    40% { left: 1000px;  top: 800px;transform: scaleX(1);}
+    50% {left: 1200px; top: 850px;transform: scaleX(1);}
+    60% {left: 1200px; top: 850px;transform: scaleX(-1);}
+    80% {left: 700px; top: 700px;transform: scaleX(-1);}
+    100% { left: 400px; top: 400px; transform: scaleX(-1);}
+}
+#diver2{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: diver2;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver2{
+    0% {left: 100px; top: 300px;transform: scaleX(1);}
+    20% { left: 400px; top: 600px;transform: scaleX(1);}
+    40% { left: 600px;  top: 800px;transform: scaleX(1);}
+    50% {left: 800px; top: 900px;transform: scaleX(1);}
+    60% {left: 800px; top: 900px;transform: scaleX(-1);}
+    80% {left: 500px; top: 500px;transform: scaleX(-1);}
+    100% { left: 100px; top: 300; transform: scaleX(-1);}
+}
+#diver3{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: diver3;
+    animation-duration: 25s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes diver3{
+    0% {left: 100px; top: 400px;transform: scaleX(1);}
+    20% { left: 300px; top: 400px;transform: scaleX(1);}
+    40% { left: 500px;  top: 300px;transform: scaleX(1);}
+    50% {left: 600px; top: 500px;transform: scaleX(1);}
+    60% {left: 600px; top: 100px;transform: scaleX(-1);}
+    80% {left: 500px; top: 200px;transform: scaleX(-1);}
+    100% { left: 100px; top: 400; transform: scaleX(-1);}
+}
+#faintschool2{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: faintschool2;
+    animation-duration: 15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes faintschool2{
+    0% {left: 700px; top: 800px;}
+    20% { left: 700px; top: 700px;}
+    40% { left: 700px;  top: 600px;}
+    50% {left: 650px; top: 500px;}
+    60% {left: 660px; top: 400px;}
+    80% {left: 700px; top: 200px;}
+    100% { left: 680px; top: 100px;}
+}
+#faintschool3{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: faintschool3;
+    animation-duration: 18s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes faintschool3{
+    0% {left: 800px; top: 800px;}
+    20% { left: 800px; top: 700px;}
+    40% { left: 750px;  top: 600px;}
+    50% {left: 770px; top: 500px;}
+    60% {left: 800px; top: 400px;}
+    80% {left: 0px; top: 200px;}
+    100% { left: 500px; top: 100px;}
+}
+#goldFishSchool2{
+    left: 100px; top: 400px;
+    position: absolute;
+    animation-name: goldFishSchool2;
+    animation-duration: 14s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+@keyframes goldFishSchool2{
+    0% {left: 500px; top: 400px;transform: scaleX(1);}
+    20% { left: 700px; top: 400px;transform: scaleX(1);}
+    40% { left: 900px;  top: 300px;transform: scaleX(1);}
+    50% {left: 1000px; top: 50px;transform: scaleX(1);}
+    60% {left: 1000px; top: 100px;transform: scaleX(-1);}
+    80% {left: 500px; top: 200px;transform: scaleX(-1);}
+    100% { left: 100px; top: 400; transform: scaleX(-1);}
+}

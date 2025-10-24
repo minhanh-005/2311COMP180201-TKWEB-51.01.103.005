@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Halloween Festival</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
+    body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ff6600;
+  padding: 20px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 40px;
+  border-bottom: 1px solid #444;
+}
+
+.gallery img {
+  width: 150px;
+  margin: 10px;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #ff6600;
+  color: #fff;
+  cursor: pointer;
+}
+img{
+  width:1520px;
+  height:500px
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Lễ hội Halloween 🎃</h1>
+    <nav>
+      <ul>
+        <li><a href="#team">Thành viên nhóm</a></li>
+        <li><a href="#history">Lịch sử Halloween</a></li>
+        <li><a href="#shop">Gian hàng</a></li>
+        <li><a href="#gallery">Bộ sưu tập</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+        <li><a href="#register">Đăng ký</a></li>
+      </ul>
+    </nav>
+  </header>
+<div class="background"><img src="./halloween-gettyimages-1424736925.jpg"></div>
+  <section id="team">
+    <h2>Thành viên nhóm</h2>
+    <p>Phan Nguyễn Minh Anh</p>
+  </section>
+
+  <section id="history">
+    <h2>Lịch sử Halloween</h2>
+    <p>Lễ hội Halloween bắt nguồn từ lễ hội Samhain của người Celt...</p>
+  </section>
+
+  <section id="shop">
+    <h2>Gian hàng Halloween</h2>
+    <input type="text" id="filter" placeholder="Lọc sản phẩm...">
+    <ul id="product-list">
+      <li>Bí ngô ma quái</li>
+      <li>Mặt nạ phù thủy</li>
+      <li>Kẹo ma thuật</li>
+      <li>Áo choàng Dracula</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Bộ sưu tập hình ảnh</h2>
+    <div class="gallery">
+      <img src="./Chibi-Ghost-Vector-Clipart-64551068-1-1.png" alt="Ghost" style="width:200px; height: 200px">
+      <img src="./pngtree-halloween-sticker-decoration-children-wear-fancy-pumpkin-kawaii-cartoon-png-image_13405568.png" alt="Pumpkin" style="width:200px; height: 200px">
+      <img src="./il_794xN.5025908584_knzy.avif" alt="Bat" style="width:200px; height: 200px">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Liên hệ</h2>
+    <form>
+      <input type="text" placeholder="Họ tên">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Nội dung tin nhắn"></textarea>
+      <button type="submit">Gửi</button>
+    </form>
+  </section>
+
+  <section id="register">
+    <h2>Đăng ký tham gia</h2>
+    <form>
+      <input type="text" placeholder="Họ tên">
+      <input type="email" placeholder="Email">
+      <select>
+        <option>Tham gia hóa trang</option>
+        <option>Tham gia gian hàng</option>
+        <option>Khách tham quan</option>
+      </select>
+      <button type="submit">Đăng ký</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Halloween Group</p>
+  </footer>
+
+  <script>
+    // Lọc sản phẩm bằng jQuery
+    $('#filter').on('keyup', function () {
+      const keyword = $(this).val().toLowerCase();
+      $('#product-list li').filter(function () {
+        $(this).toggle($(this).text().toLowerCase().includes(keyword));
+      });
+    });
+  </script>
+</body>
+</html>

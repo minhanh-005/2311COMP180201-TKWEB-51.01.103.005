@@ -1,0 +1,202 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f4f8fb;
+  color: #333;
+}
+
+.contact-section {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+  gap: 30px;
+}
+
+.contact-info, .contact-form {
+  flex: 1 1 400px;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.contact-info h1 {
+  color: #0078d4;
+  margin-bottom: 10px;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.map-container {
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  color: #0078d4;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+form input:focus, form textarea:focus {
+  border-color: #0078d4;
+  outline: none;
+}
+
+button {
+  background-color: #0078d4;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #005fa3;
+}
+
+#formMessage {
+  margin-top: 15px;
+  color: green;
+  font-weight: bold;
+  transition: opacity 0.5s ease;
+}
+
+.hidden {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.menu{
+    background-color: gainsboro;
+    width: 1200px;
+    height: 40px;
+    /* display: flex; */
+    /* align-items: center; */
+    /*justify-content: space-between; */
+}
+.menu li{
+    list-style-type: none;
+    float: left;
+}
+.menu li a{
+    text-decoration: none;
+    color: black;
+    padding: 0 20px;
+    line-height: 40px;
+    display: block;
+}
+.menu li a:hover{
+    background-color: gray;
+    border-bottom: 2px black  solid;
+    /* padding: 10px; */
+}
+.box-name{
+    text-align: center;
+}
+.box1{
+    border: 2px solid red;
+    width: 200px;
+    height: 200px;
+    padding-left: 15px;
+    position: relative;
+    display: inline-block;
+    background-color: rgba(220, 220, 220, 0.232);
+}
+.box-product{
+    margin: 0 auto;
+}
+.box-price{
+    /* border: 2px solid green; */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+.hh-header{
+    position: relative;
+    height: 170px;
+}
+.hh-logo{
+    position: absolute;
+    right: 330px;
+    width: 400px;
+}
+.hh-company{
+    font-family:Impact;
+    font-size: 35px;
+    text-shadow: 0 0 2px black;
+    position: absolute;
+    top: 45px;
+    padding-bottom: 2px;
+    border-bottom: 1px dotted gray;
+}
+.hh-slogan{
+    position: absolute;
+    top: 100px;
+}
+.hh-sheet{
+    box-shadow: 0 0 5px lightgray;
+    border-radius: 10px;
+    padding: 5px;
+    position: relative;
+    top: -10px;
+    margin-top: 20px;
+}
+.hh-body{
+    padding: 5px;
+}
+.hh-cart ul{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    font-size: smaller;
+}
+.hh-card img{
+    height: 30%;
+    width: 30%;
+}
+.hh-card{
+    margin: 7px 0;
+}
+.hh-product{
+    text-align: center;
+    padding: 5px 2px;
+    display: inline-block;
+}
+.hh-product .card-body img{
+    height: 150px;
+    max-width: 95%;
+}
+.container{
+    width: 300px;
+    height: auto;
+    float: right;
+    display: block;
+}

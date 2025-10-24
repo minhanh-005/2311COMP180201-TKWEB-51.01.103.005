@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/sanpham.css">
+</head>
+<body>
+    
+    <div class="conatiner" style="height:auto">
+        <header class="hh-header">
+            <h1 class="hh-company">FIT-HCMUE Shop</h1><hr style="width:250px">
+            <h5 class="hh-slogan">Bring knowledge to everyone</h5>
+            <img class="hh-logo" src="../images/chennai_outsourcing.jpg" style="width: 350px">
+        </header>
+        <nav class="row navbar navbar-expand-lg bg-light" style="width: 20px"></nav>
+        <div class="hh-sheet row" style="width: 10px"></div>
+        <footer class="row-card">
+            <div class="card-body text-center">FIT-HCMUE &copy; 2023 </div>
+        </footer>
+    </div>
+    <div  class="menu">
+        <ul>
+            <li><a href="./index.html">Trang chủ</a></li>
+            <li><a href="./gioithieu.html">Giới thiệu</a></li>
+            <li><a href="./sanpham.html">Sản phẩm</a></li>
+            <li><a href="./lienhe.html">Liên hệ</a></li>
+            <li><a href="./hoidap.html">Hỏi đáp</a></li>
+            <select>
+                <option>Tài khoản</option>
+                <option>Đăng xuất</option>
+                <option>Đăng ký</option>
+                <option>Đăng nhập</option>
+                <option>Đổi mật khẩu</option>
+            </select>
+            <input class="search-box" type="text" id="search-box" placeholder="Search" >
+            <input class="search-button" type="button" id="search-button" value="Search">
+        </ul>
+    <div class="container">
+        <div class="card hh-hart">
+            <div class="card-header">
+                <strong>Giỏ hàng</strong>
+            </div>
+            <div class="card-body row">
+                <img class="col-md-5" src="../images/pngtree-shopping-cart-icon-png-image_14825172.avif">
+                <ul class="col-md-7">
+                    <li><strong>Giỏ hàng</strong></li>
+                    <ul id="cart"></ul>
+                </ul>
+            </div>
+        </div>
+        <div class="card hh-card">
+            <div class="card-header">
+                <i class="fab fa-apple"></i>
+                <strong>Tìm kiếm</strong>
+            </div>
+            <div class="card-body">
+                <form>
+                    <input placeholder="Keywords" class="form-control"/>
+                </form>
+            </div>
+        </div>
+        <div class="list-group">
+            <div class="card-header">
+                <i class="fas fa-list"></i>
+                <strong>Chủng loại</strong>
+            </div>
+            <a href="#" class="list-group-item">Điện thoại
+                <span class="badge badge-primary badge-pill">55</span>
+            </a>
+            <a href="#" class="list-group-item">Laptop</a>
+            <a href="#" class="list-group-item">Tablet</a>
+            <a href="#" class="list-group-item">Điều hòa</a>
+            <a href="#" class="list-group-item">Tivi</a>
+            <a href="#" class="list-group-item">Tủ lạnh</a>
+            <a href="#" class="list-group-item">Điện gia dụng</a>
+        </div>
+    </div>
+    <main>
+        <section class="product">
+            <img src="../images/iphone-12-violet-600x600 (1).jpg" alt="Sản phẩm" style="width:200px" />
+            <div class="info">
+                <h2>Iphone 12</h2>
+                <p>Có thiết kế viền vuông, màn hình OLED 6.1 inch sắc nét, chip A14 Bionic mạnh mẽ, hỗ trợ 5G và camera kép chụp ảnh chất lượng cao.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                <p class="price">Giá: 12.000.000₫</p>
+                <button onclick="addToCart('Iphone 12', 12000000)">Thêm vào giỏ</button>
+            </div>
+        </section>
+    </main>
+     <main>
+        <section class="product">
+            <img src="../images/iphone-13-standard.png" alt="Sản phẩm" style="width:200px; height:290px"/>
+            <div class="info">
+                <h2>Iphone 13</h2>
+                <p>Có màn hình OLED 6.1 inch, chip A15 Bionic mạnh mẽ, camera kép chụp ảnh sắc nét, pin lâu hơn và thiết kế hiện đại với nhiều màu sắc.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                <p class="price">Giá: 15.000.000₫</p>
+                <button onclick="addToCart('Iphone 13', 15000000)">Thêm vào giỏ</button>
+            </div>
+        </section>
+    </main>
+     <main>
+        <section class="product">
+            <img src="../images/Apple-iPhone-14-Pro-Max,-5G,-128GB,-Space-Black.jpg" alt="Sản phẩm" style="width:300px; height:300px" />
+            <div class="info">
+                <h2>Iphone 14 Pro Max</h2>
+                <p>Có màn hình 6.7 inch, chip A16 Bionic, camera 48MP, Dynamic Island và Always-On Display.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                <p class="price">Giá: 20.000.000₫</p>
+                <button onclick="addToCart('Iphone 14 Pro Max', 20000000)">Thêm vào giỏ</button>
+            </div>
+        </section>
+    </main>
+     <main>
+        <section class="product">
+            <img src="../images/pbi-iphone-15.avif" alt="Sản phẩm" style="width:300px; height:280px"/>
+            <div class="info">
+                <h2>Iphone 15</h2>
+                <p>Có màn hình OLED 6.1 inch, chip A16 Bionic, Dynamic Island, camera kép 48MP và cổng USB-C.</p>
+                <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+                <p class="price">Giá: 25.000.000₫</p>
+                <button onclick="addToCart('Iphone 15', 25000000)">Thêm vào giỏ</button>
+            </div>
+        </section>
+    </main>
+     <div id="cart"></div>
+  <div id="total">Tổng tiền: 0đ</div>
+
+  <script>
+    const cart = [];
+
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      renderCart();
+    }
+
+    function removeFromCart(index) {
+      cart.splice(index, 1);
+      renderCart();
+    }
+
+    function renderCart() {
+      const cartDiv = document.getElementById('cart');
+      cartDiv.innerHTML = '';
+
+      if (cart.length === 0) {
+        cartDiv.innerHTML = '<p>Giỏ hàng trống.</p>';
+        document.getElementById('total').textContent = 'Tổng tiền: 0đ';
+        return;
+      }
+
+      cart.forEach((item, index) => {
+        const itemDiv = document.createElement('div');
+        itemDiv.className = 'item';
+        itemDiv.innerHTML = `
+          <span>${index + 1}. ${item.name} - ${item.price.toLocaleString()}đ</span>
+          <button class="remove-btn" onclick="removeFromCart(${index})">Xóa</button>
+        `;
+        cartDiv.appendChild(itemDiv);
+      });
+
+      const total = cart.reduce((sum, item) => sum + item.price, 0);
+      document.getElementById('total').textContent = `Tổng tiền: ${total.toLocaleString()}đ`;
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .product-row { 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+            padding: 10px;
+        }
+        .product-name{
+            flex-grow: 1;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .khung1{
+            background-color: grey;
+            border: 20px solid grey;
+            border-radius: 3px;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var ds=['Sony Xperia','Samsung Galaxy','Nokia 6','Xiaomi Redmi Note 4','Apple iPhone 6S','Xiaomi Mi 5s Plus','Apple iPhone 8 Plus','Fujitsu F04E','Oppo A71'];
+        function show(){
+            var s='';
+            for(var i = 0; i < ds.length ; i++  ){
+                s += '<div class="product-row">';
+                s += '<span class="product-name">' + ds[i] + '</span>';
+                s += '<button onclick="edit(' + (i + 1) + ')">Edit</button>';
+                s += '<button onclick="del(' + (i + 1) + ')">Delete</button>';
+                s += '</div>';
+            }
+            return s;
+        }
+        function add(){
+            var moi =document.getElementById('sanpham').value;
+            if (moi !== '') {
+            ds.push(moi);
+            document.getElementById('xuat').innerHTML= show();
+            document.getElementById('sanpham').value = '';
+            updateCount()
+            }
+        }
+        function edit(){
+            var index=prompt("Nhập sản phẩm cần sửa:");
+            var newName=prompt("Nhập tên sản phẩm mới:");
+            ds[index-1] = newName;
+            document.getElementById('xuat').innerHTML = show();
+            updateCount();
+        }
+        function del(){
+            var index=prompt("Nhập sản phẩm cần xóa:");
+            ds.splice(index-1, 1);
+            document.getElementById('xuat').innerHTML = show();
+            updateCount();
+        }
+        function updateCount() {
+            var count = ds.length; 
+            document.getElementById('count').innerHTML = count + " product";
+        }
+        window.onload = function(){
+            document.getElementById('xuat').innerHTML = show();
+            updateCount();
+        }
+    </script>
+    <div style="border: 3px black ">
+    <div>
+        <h3>Add New Product</h3>
+        <div class="khung1">
+            <input type="text" id="sanpham" placeholder="New Product" value="">
+            <button onclick="add()">Add</button>
+        </div>
+        
+    </div>
+    <div>
+        <h3>Display All Product</h3>
+        <p style="display: flex; justify-content: space-between">
+            <span>Product Name</span>
+            <span id="count"></span>
+        </p>
+    </div>
+    <div id="xuat"></div>
+    </div>
+    
+    
+</body>
+</html>
